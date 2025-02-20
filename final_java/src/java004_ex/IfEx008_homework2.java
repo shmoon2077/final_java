@@ -40,7 +40,7 @@ public class IfEx008_homework2 {
 		total = kor+eng+mat;
 		avg = total/3.0;
 					
-		if (avg>=60 && (kor>40 || eng>40 || mat>0)) {pf="합격";}
+		if (avg>=60 && kor>=40 && eng>=40 && mat>=40) {pf="합격";}
 		else {pf="불합격";};
 		
 		lev = avg>=90? "수":
@@ -55,6 +55,7 @@ public class IfEx008_homework2 {
 		System.out.println("========================================================================\n"
 			  + "학번\t국어\t영어\t수학\t총점\t평균\t합격여부\t레벨\t장학생\r\n"+"========================================================================\n");
 		System.out.printf("%s\t%d\t%d\t%d\t%d\t%.2f\t%s\t%s\t%s\t",stn,kor,eng,mat,total,avg,pf,lev,uber);
+		//굳이 printf로 할 필요가 있었나. 오히려 더 복잡해진듯
 		scan.close();
 	} //end main
 
