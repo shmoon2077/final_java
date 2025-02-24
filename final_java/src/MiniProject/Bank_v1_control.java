@@ -71,7 +71,8 @@ public class Bank_v1_control {
 			case 5 : System.out.println("계좌 정보를 삭제합니다. 삭제하시겠습니까? y/n");
 			         ch = scan.next().charAt(0);
 			         scan.nextLine();
-			         if (ch=='y') { id = null;  bal= 0; } 			         
+			         if (ch=='y') { id = null;  bal= 0; }
+			         else break;
 				break; //end case 5
 				
 				     }

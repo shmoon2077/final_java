@@ -16,7 +16,7 @@ public class IfEx007_homework {
 		System.out.print("두번째 숫자를 입력하세요");
 		num2 = scan.nextInt();
 		System.out.print("연산자를 선택하세요");
-		oper = scan.next();
+		oper = scan.next(); 
 		
 		//처리
 		if (oper=="+") {result=(num1+num2);}

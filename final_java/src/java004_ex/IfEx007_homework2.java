@@ -9,7 +9,7 @@ public class IfEx007_homework2 {
 		int num1,num2;
 		String result="";
 		char op= ' ';
-		//입력
+		//입력 
 		System.out.print("먼저 숫자를 입력하세요");
 		num1 = scan.nextInt();
 		System.out.print("두번째 숫자를 입력하세요");

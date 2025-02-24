@@ -14,5 +14,5 @@ public class IfEx004 {
 		else {System.out.println("알파벳 입력하라니깐!!");} 
 		scan.close();		
 	}
-
+ 
 }

@@ -14,6 +14,6 @@ public class Repeat001 {
 		else if (a==3 ) {System.out.println(a+"입니다");}
 		scan.close();
 		
-	}
+	 }
 
 }
