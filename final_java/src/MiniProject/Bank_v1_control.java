@@ -12,7 +12,8 @@ public class Bank_v1_control {
 	
 	
 	for (;;) { //무한 반복
-		System.out.print("\n\n========KBANK========\r\n"+"1.추가\r\n"+"2.조회\r\n"+"3.입금\r\n"
+		System.out.print("\n\n==="
+				+ "=====KBANK========\r\n"+"1.추가\r\n"+"2.조회\r\n"+"3.입금\r\n"
 	                     +"4.출금\r\n"+"5.삭제\r\n"+"9.종료\r\n"+"메뉴를 선택하세요 >>  ");
 		num = scan.nextInt();
 		scan.nextLine();
@@ -71,9 +72,8 @@ public class Bank_v1_control {
 			case 5 : System.out.println("계좌 정보를 삭제합니다. 삭제하시겠습니까? y/n");
 			         ch = scan.next().charAt(0);
 			         scan.nextLine();
-			         if (ch=='y') { id = null;  bal= 0; }
-			         else break;
-				break; //end case 5
+			         if (ch=='y') { id = null;  bal= 0; };
+			         break; //end case 5
 				
 				     }
 	
