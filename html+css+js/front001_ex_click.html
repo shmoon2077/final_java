@@ -34,8 +34,22 @@
     <button class="btn btn-warning my-3" onclick="alert('alpha')">Two</button>
     <button class="btn btn-warning my-3" onclick="alert('dog'); alert('cat')">animal1</button>
     <button class="btn btn-warning my-3" id="a">animal2</button>
+    <button class="btn btn-warning my-3" id="b">animal3</button>
+    <button class="btn btn-warning my-3" class="c" id="c">animal4</button>
     <script>
         document.getElementById("a").onclick = function(){ alert('dog');alert('cat') };
+        //#b - css 표현법 - 아이디가 b인 것.
+        document.querySelector("#b").onclick = function() {
+        document.querySelector("#b").style.background="black";
+        document.querySelector("#b").style.color="white";
+      
+      }
+      // .c - css 표현법 - 클래스가 c인 것
+      document.querySelector(".c").onclick = function () {
+        document.querySelector(".c").style.background="skyblue";
+        document.querySelector(".c").style.color="red";
+      }
+
     </script>
 
 
