@@ -1,4 +1,4 @@
-package java10;
+package java010;
 
 class Farm {
 	Farm() {}

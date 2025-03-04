@@ -1,4 +1,4 @@
-package java10_ex;
+package java010_ex;
 
 class Coffee {
 String name; int price,num;

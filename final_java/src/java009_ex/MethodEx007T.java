@@ -1,10 +1,10 @@
-package java09_ex;
+package java009_ex;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
 
-public class MethodEx007 {
+public class MethodEx007T {
     public static void who_are_you(String [][] users)
     ///아이디를 확인하여 국적 확인해주기
     { Scanner scan = new Scanner(System.in);
@@ -23,28 +23,25 @@ public class MethodEx007 {
     public static void who_pass_change(String[][] users) {
     String id = " ";
     String pw = " ";
-    String result = " "; 
-    String temp_pw = " ";
-    int row;
-    int col;
+    String result = "유저 확인해주세요"; 
     Scanner scan = new Scanner(System.in);
     System.out.print("아이디를 입력하세요");
     id = scan.next();
     System.out.print("비밀번호를 입력하세요");
     pw = scan.next();
-    for (row=0;row<users.length;row++) {
-    	for (col=0;col<users[row].length;col++) {
-    		if (id.equals(users[row][0]) && pw.equals(users[0][col]))
-    		{ System.out.print("변경하실 비밀번호를 입력하세요");
-    		  temp_pw = scan.next();
-    		  users[row][col] = temp_pw;
-    		  System.out.print(Arrays.deepToString(users[row]));}
-    		else {System.out.println("아이디와 비밀번호를 확인하세요");break;
-    		    		}
     
-    	}
-    	}// end first for
-	    }//end change
+    int find=-1;
+    for (int row=0; row<users.length;row++) {
+    	if(id.equals(users[row][0]) && pw.equals(users[row][1]))
+    	{ find=row;break; } }
+    	if (find!=-1) { System.out.print("변경하실 비밀번호를 입력하시오");}
+    	users[find][1] = scan.next();
+    	result = Arrays.toString(users[find]);
+    	   
+    System.out.println(result);
+    }
+    
+	
       
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);

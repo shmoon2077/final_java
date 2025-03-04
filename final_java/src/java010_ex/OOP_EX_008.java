@@ -1,4 +1,4 @@
-package java10_ex;
+package java010_ex;
 
 class Area1 {
     static float pi = 3.14159f;

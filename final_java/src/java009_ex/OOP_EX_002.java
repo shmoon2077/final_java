@@ -1,4 +1,4 @@
-package java09_ex;
+package java009_ex;
 
 import java.util.Scanner;
 

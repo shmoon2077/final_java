@@ -1,4 +1,4 @@
-package java10_ex;
+package java010_ex;
 
 class Mobile2 {
 	String serialNo;  // 인스턴스 변수 - heap area - new O - this (각각)
