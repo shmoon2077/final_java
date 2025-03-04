@@ -17,7 +17,6 @@ public class ClassArrEx2 {
 	   // 2번째에는 아이언맨 정보넣기  - "블랙팬서", 20, 60, 90
 	      
 	   ////// CONTROLLER - 처리 해결사 Controller)
-	   System.out.println("main 주소 확인 : "+ System.identityHashCode(std));
 	   Score2Process process = new Score2Process();
 	   process.process_avg(std); 
 	   process.process_pass(std); 
@@ -25,6 +24,6 @@ public class ClassArrEx2 {
 	   
 	   ////// VIEW       - CONSOLE , WEB
 	   Score2Print  print = new Score2Print();
-	   print.show();  
+	   print.show(std);  
 	  }
 	}
