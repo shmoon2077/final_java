@@ -1,0 +1,15 @@
+유효성 검증 사이트
+
+https://validator.w3.org/nu/#file
+
+
+부호 사이트
+
+https://tools.w3cub.com/html-entities
+
+
+
+강의 계획 티스토리
+
+1day
+https://hi-sally03915.tistory.com/1531
