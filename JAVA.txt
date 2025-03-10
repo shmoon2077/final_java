@@ -1886,6 +1886,33 @@ class interSon2 extends 클래스명 implements 인터페이스1,2,3 {   } 다�
 
 
 
+◆ 1. Collection Framework
+1. 저장단위
+변수 < 배열 < 클래스 < 컬렉션프레임워크 < 파일 < DB;
+
+2. 컬렉션 프레임워크
+- [배열]의 단점을 개선한 클래스, 객체(클래스)만 저장 가능.
+- 동 적 배 열
+
+
+배열의 단점
+1) 같은 타입만 묶어서 저장 가능
+2) 배열 생성시 크기를 지정해서 사용. 추후 변경이 불가능.
+
+
+3. 핵심 인터페이스
+1) LIST : 순서가 있음, 중복 허용 
+
+          add, get ,size, remove, contains
+
+2) SET : 순서가 없음, 중복 허용 X 
+
+         add, get ,size, remove, enhanced for , iterator,  contains
+
+3) MAP : KEY , VALUE
+
+          put, get(key) ,size, remove, enhanced for , iterator,  contains	
+
 
 
 

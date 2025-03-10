@@ -55,6 +55,7 @@ class Star extends Process {
 	
 	    
 		return result;
+		return result;
 	} 
 }
 
