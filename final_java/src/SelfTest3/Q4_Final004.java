@@ -15,14 +15,21 @@ class User004 {
 	
 			
 	public User004() {	}
-
-
-	public User004(char c, String string) {
+	
+	public User004(char division, String string) {
+		this.divisionA=division;
 	}
+
+	@Override
+	public String toString() {
+		return "User004 []";
+	}
+	
+	
 	
 }
 
-public class Final004 {
+public class Q4_Final004 {
 	public static void main(String[] args) {
 		User004 c1 = new User004('B',"881111-111558"); 
 		User004 c2 = new User004(); 

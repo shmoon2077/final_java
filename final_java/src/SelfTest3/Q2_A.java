@@ -5,7 +5,7 @@ package SelfTest3;
 //3. 지역변수 = method 안의 int a
 //4. 오류날만한 코드 void method() {int a} 
 
-public class A {
+public class Q2_A {
 	int a;
 	static String company; 
 	void method() {int a;}

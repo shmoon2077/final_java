@@ -1,6 +1,6 @@
 package SelfTest3;
 
-public class Sawon005 {
+class Sawon005 {
 	int pay=10000;
 	
 	static int su=10;
@@ -11,5 +11,25 @@ public class Sawon005 {
 	public static void showSu() {System.out.println(su);} 
 	public static void showPay() {System.out.println(this.pay);} //클래스 함수에 지역 변수 사용
 	
-		
+	public void showAll001() {
+		System.out.println(su);
+		System.out.println(this.pay);
+	}
+	
+	public void showAll002 () {
+		showAll001();
+		System.out.println(this.pay);
+	}
+			
+}
+
+public class Q3_Class029 {
+	public static void main(String[] args) {
+		Sawon005 sola = new Sawon005();
+		sola.showAll001();
+	}
+	
+	
+	
+	
 }

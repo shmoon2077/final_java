@@ -1,13 +1,13 @@
 package SelfTest3;
 
-class Cafe {
+class Q1_Cafe {
 	String menu;
 	int ea;
 	int price;
 	
-	public Cafe() {	}
+	public Q1_Cafe() {	}
 	
-	public Cafe(String menu, int ea, int price) {
+	public Q1_Cafe(String menu, int ea, int price) {
 		this.menu = menu; this.ea = ea; this.price = price; }
 		
 
@@ -15,9 +15,9 @@ class Cafe {
 	
 
 	public static void main(String[] args) {
-		Cafe a1 = new Cafe("카페라떼",2,4000);
+		Q1_Cafe a1 = new Q1_Cafe("카페라떼",2,4000);
 		a1.show();
-		Cafe a2 = new Cafe();
+		Q1_Cafe a2 = new Q1_Cafe();
 		a2.show();
 	}
 	
