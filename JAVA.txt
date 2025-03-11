@@ -1913,6 +1913,13 @@ class interSon2 extends 클래스명 implements 인터페이스1,2,3 {   } 다�
 
           put, get(key) ,size, remove, enhanced for , iterator,  contains	
 
+◆ 2. Lambda + Stream
+1. Lambda ! 
+- 자바에서 함수적 프로그래밍 지원 기법
+- 코드 간결하게 ` _ ` ; 
+
+- 함수형 인터페이스 
+ : 1개의 추상메서드를 갖는 인터페이스 
 
 
 

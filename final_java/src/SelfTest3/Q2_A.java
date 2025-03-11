@@ -6,8 +6,8 @@ package SelfTest3;
 //4. 오류날만한 코드 void method() {int a} 
 
 public class Q2_A {
-	int a;
+	int a; // heap new 
 	static String company; 
-	void method() {int a;}
+	void method() {int a;} // stack 임시! ※ 주의사항 = 무조건 초기화할 것!
 
 }
