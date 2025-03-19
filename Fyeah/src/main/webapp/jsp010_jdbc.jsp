@@ -32,8 +32,6 @@
 		conn.close();
 		} catch(Exception e) {e.printStackTrace();}
 	 %>
-	 
-	
 
 </body>
 </html>
