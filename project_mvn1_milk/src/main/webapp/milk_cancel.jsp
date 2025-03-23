@@ -10,10 +10,24 @@
     
     try {
     
-    String oname = request.getParameter("oname");
-    int ono = Integer.parseInt(request.getParameter("ono"));
-    int onum = Integer.parseInt(request.getParameter("onum"));
-    String sql = "delete from milk_order where ono=? and oname=? and onum=?";
+
+    String onostr = request.getParameter("ono");
+    
+    if (onostr == null || onostr.trim()=="") 
+    { out.print("<script> alert('주문 번호를 입력해주세요'); location.href='milk.jsp';</script>"); return; }
+    
+    int ono;
+    try {
+    ono = Integer.parseInt(onostr);
+    } catch (NumberFormatException e) {out.print("<script> alert('숫자로 입력하세요') location.href='milk.jsp';</script>"); 
+    return;
+    }
+    
+    
+    
+    
+
+    String sql = "delete from milk_order where ono=?";
     
     Class.forName("com.mysql.cj.jdbc.Driver");
     conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mbasic","root","1234");
@@ -21,8 +35,6 @@
     
     pstmt = conn.prepareStatement(sql);
     pstmt.setInt(1, ono);
-    pstmt.setString(2, oname);
-    pstmt.setInt(3, onum);
     
     int result = pstmt.executeUpdate();
     

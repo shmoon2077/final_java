@@ -12,11 +12,26 @@
 
 	//2/ request.getParameter() 이용해서 데이터 받기
 	String oname = request.getParameter("oname");
-	int onum = Integer.parseInt( request.getParameter("onum"));
+	String onumstr = request.getParameter("onum");
+	
+	if ( oname==null || oname.trim()=="" )
+	{ out.print("<script> alert('빈칸을 모두 채워주세요'); location.href='milk.jsp'</script>"); return; }
+	if ( onumstr==null || onumstr.trim()=="")
+	{ out.print("<script> alert('빈칸을 모두 채워주세요'); location.href='milk.jsp'</script>"); return; }
 	
 	
 	// out.print(oname+"/"+oprice);
 	
+	int onum;
+try {
+    onum = Integer.parseInt(onumstr);
+} catch (NumberFormatException e) {
+    out.print("<script>alert('수량은 숫자로 입력해주세요.'); location.href='milk.jsp';</script>");
+    return;
+}
+
+
+
 	
 	//3. Driver 연동
 	Connection conn=null; PreparedStatement pstmt = null; //Result rset = null;

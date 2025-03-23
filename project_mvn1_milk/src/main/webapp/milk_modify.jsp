@@ -5,14 +5,44 @@
 <%@page import="java.sql.PreparedStatement"%>
 <%@page import="java.sql.ResultSet"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <%
 //1. UTF-8 설정
 	request.setCharacterEncoding("UTF-8");
 //2. request.getParameter() 이용해서 데이터 받기
 	String oname = request.getParameter("oname");
-	int onum = Integer.parseInt(request.getParameter("onum"));
-	int ono = Integer.parseInt(request.getParameter("ono"));
+	String onumstr = request.getParameter("onum");
+	String onostr = request.getParameter("ono");
+	
+	if ( oname==null || oname.trim()=="" )
+	{ out.print("<script> alert('빈칸을 모두 채워주세요'); location.href='milk.jsp'</script>"); return; }
+	if ( onumstr==null || onumstr.trim()=="")
+	{ out.print("<script> alert('빈칸을 모두 채워주세요'); location.href='milk.jsp'</script>"); return; }
+	if ( onostr==null || onostr.trim()=="")
+	{ out.print("<script> alert('빈칸을 모두 채워주세요'); location.href='milk.jsp'</script>"); return; }
+	
+	
+	// out.print(oname+"/"+oprice);
+	
+	int onum;
+try {
+    onum = Integer.parseInt(onumstr);
+} catch (NumberFormatException e) {
+    out.print("<script>alert('수량은 숫자로 입력해주세요.'); location.href='milk.jsp';</script>");
+    return;
+}
+
+int ono;
+try {
+ono = Integer.parseInt(onostr);
+} catch (NumberFormatException e) {
+out.print("<script>alert('주문번호는 숫자로 입력해주세요.'); location.href='milk.jsp';</script>");
+return;
+}
+	
+	
+	
+	
 //3. Driver 연동  //4.DB 연동
 	Connection conn=null; PreparedStatement pstmt = null; ResultSet rset =null;
 	String sql="update milk_order set oname=?, onum=? where ono=?";
@@ -38,4 +68,4 @@
 		if (pstmt != null) { pstmt.close(); }
 		if (conn != null) { conn.close(); }
 	}
-%>    
+%>
