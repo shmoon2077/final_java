@@ -193,22 +193,22 @@
 	         -->
 
 
-						<form action="milk_modify.jsp" method="post" onsubmit="()empty">
+						<form action="milk_modify.jsp" method="post" onsubmit="()empty1">
 							<div class="mb-3 mt-3">
-								<label for="ono" class="form-label">주문 번호</label> <input
-									type="number" class="form-control" id="ono"
-									placeholder="수정할 주문의 번호를 입력하세요" name="ono">
+								<label for="ono1" class="form-label">주문 번호</label> <input
+									type="number" class="form-control" id="ono1"
+									placeholder="수정할 주문의 번호를 입력하세요" name="ono1">
 							</div>
 
 							<div class="mb-3 mt-3">
-								<label for="oname" class="form-label">우유 이름</label> <input
-									type="text" class="form-control" id="oname"
-									placeholder="주문 수정할 우유의 이름을 입력하세요." name="oname">
+								<label for="oname1" class="form-label">우유 이름</label> <input
+									type="text" class="form-control" id="oname1"
+									placeholder="주문 수정할 우유의 이름을 입력하세요." name="oname1">
 							</div>
 							<div class="mb-3">
-								<label for="onum" class="form-label">주문 수량</label> <input
-									type="Number" class="form-control" id="onum"
-									placeholder="수정할 수량을 입력해주세요" name="onum">
+								<label for="onum1" class="form-label">주문 수량</label> <input
+									type="Number" class="form-control" id="onum1"
+									placeholder="수정할 수량을 입력해주세요" name="onum1">
 							</div>
 							<button type="submit" class="btn btn-warning">수정 접수</button>
 						</form>
@@ -229,11 +229,11 @@
 				<div id="collapseThree" class="collapse" data-bs-parent="#accordion">
 					<div class="card-body bg-primary">
 
-						<form action="milk_cancel.jsp" method="post" onsubmit="()empty">
+						<form action="milk_cancel.jsp" method="post" onsubmit="()empty2">
 							<div class="mb-3 mt-3">
-								<label for="ono" class="form-label">주문 번호</label> <input
-									type="number" class="form-control" id="ono"
-									placeholder="취소할 주문의 주문 번호를 입력하세요" name="ono">
+								<label for="ono2" class="form-label">주문 번호</label> <input
+									type="number" class="form-control" id="ono2"
+									placeholder="취소할 주문의 주문 번호를 입력하세요" name="ono2">
 							</div>
 							<button type="submit" class="btn btn-warning">취소 접수</button>
 						</form>
