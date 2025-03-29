@@ -1,19 +1,40 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Insert Title Here</title>
-<!-- Latest compiled and minified CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ include file="../inc/header.jsp"%>
 
-<!-- Latest compiled JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</head>
-<body>
-	<div class="container card bg-primary my-5">
-		<h3 class="card-header"></h3>
-						
-	</div>	  
-</body>
-</html>
+<div class="container card  my-5  p-3">
+<%-- 	<%= request.getAttribute("dto") %> --%>
+	
+	<h3 class="card-header  mb-3">MULTIBOARD 상세보기</h3>
+	<div class="my-3 ">
+		<div class="">
+			<span><i class="bi bi-book-half"></i> 조회수</span>
+			<p>${dto.bhit}</p>
+		</div>
+	</div>
+	<div class="my-3">
+		<div class="">
+			<span><i class="bi bi-book-half"></i> 이름</span>
+			<p>${dto.bname}</p>
+		</div>
+	</div>
+	<div class="my-3">
+		<div class="">
+			<span><i class="bi bi-book-half"></i> 제목</span>
+			<p>${dto.btitle}</p>
+		</div>
+	</div>
+	<div class="my-3">
+		<div class="">
+			<span><i class="bi bi-book-half"></i> 내용</span>
+			<textarea class="form-control"readonly>${dto.bcontent}</textarea>
+		</div>
+	</div>
+	<div class="text-end">
+		<a href="edit_view.do?bno=${dto.bno}" class="btn btn-primary my-2"  style="display:block;width:100%"  >수정</a> 
+		<a href="delete.do?bno=${dto.bno}" class="btn btn-outline-primary my-2"  style="display:block;width:100%"  >삭제</a> 
+		<a href="list.do" class="btn btn-outline-primary my-2"  style="display:block;width:100%"  >목록보기</a>
+	</div>
+</div>
+
+<%@ include file="../inc/footer.jsp"%>

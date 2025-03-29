@@ -1,35 +1,43 @@
-<%@page import="domain.BoardVO"%>
-<%@page import="DAO.BoardDAO"%>
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Insert Title Here</title>
-<!-- Latest compiled and minified CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ include file="../inc/header.jsp" %>
 
-<!-- Latest compiled JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</head>
-<body style="margin: 50px;">
+<div class="container card  my-5   p-3">
+	<h3  class="card-header  mb-3">MULTIBOARD - 글쓰기 </h3>
+	<form action="write.do" method="post"  id="writeForm"   onsubmit="return  form()">
+		<div class="my-3">
+		  <label for="bname" class="form-label" >이름</label>
+		  <input type="text"   name="bname"   id="bname"   class="form-control" > 
+		</div>																	
+		<div class="my-3">
+		  <label for="btitle" class="form-label"  >제목</label>
+		  <input type="text"   name="btitle"   id="btitle"   class="form-control" > 
+		</div>	
+		<div class="my-3">
+		  <label for="bcontent" class="form-label"  >내용</label>
+		  <textarea name="bcontent"  id="bcontent"  cols="60"  rows="10"   class="form-control" ></textarea>
+		</div>				
+		<div class="my-3">
+			<button type="submit"    class="btn btn-primary  my-2"  
+					style="display:block;width:100%"  > 입력 </button>
+			<input type="reset"    value="취소"  class="btn btn-outline-primary  my-2"  
+					style="display:block;width:100%"  >  
+			<a href="list.do"   class="btn btn-outline-primary my-2"  
+					style="display:block;width:100%"  >  목록보기</a>
+		</div>	
+	
+	</form> <!-- end form -->	
+	<script>
+	function form(){  
+		let bname = document.getElementById("bname");
+		let btitle = document.getElementById("btitle");
+		let bcontent = document.getElementById("bcontent");
+	
+		if(bname.value ==""){alert("빈칸입니다");   bname.focus();  return false; }
+		if(btitle.value ==""){alert("빈칸입니다");   btitle.focus();  return false; }
+		if(bcontent.value ==""){alert("빈칸입니다");   bcontent.focus();  return false; }
+	}
+	</script>
+</div>
 
-<form action="<%BoardDAO dao =new BoardDAO(); 
-				BoardVO vo = new BoardVO();
-                dao.insert(vo);%>" method="post" id="writeForm">
-  <div class="mb-3 mt-3">
-    <label for="bname" class="form-label my-20">작성자:</label>
-    <input type="text" class="form-control" id="bname" placeholder="이름을 입력하세요" name="bname">
-  </div>
-  <div class="mb-3">
-    <label for="btitle" class="form-labelmy-20">제목</label>
-    <input type="text" class="form-control" id="btitle" placeholder="제목을 입력하세요" name="btitle">
-  </div>
-  <label for="bcontent">내용</label>
-<textarea class="form-control my-20" rows="5" cols="50" placeholder="내용을 입력하세요" id="bcontent" name="bcontent"></textarea>
-    <button type="submit" class="btn btn-primary my-20">Submit</button>
-</form>
-
-
-</body>
-</html>
+<%@ include file="../inc/footer.jsp" %>

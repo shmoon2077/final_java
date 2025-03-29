@@ -1,0 +1,32 @@
+3/28 복습문제
+
+Q1. 조작어로 테이블의 필드의 속성이나 값을 변경할 때 사용 CRUD부터 나와야함
+insert ,select delete, update, etc...
+
+Q2. (1) executeUpdate (2) executeQuery
+
+Q3. 1. mvc
+      2. mvc1 jsp controller
+      3. mvc2 servlet controller
+
+
+Q4. s1. @WebServlet("*.do) 
+      s2. web.xml
+      <servlet></servle>
+      <servlet-mapping></servlet-mapping>
+
+
+
+
+Q5. 다형성이 무엇이냐... override overload?
+	- 한가지 자료형으로 여러자료형을 관리하려고
+	- 부모자료형으로 자식자료형을 관리
+
+Q6. request.getRequestDispatcher ("경로").forward(request, response)
+
+
+Q7. 1. response.sendRedirect
+      2. out.println ("<script>location.href="경로";</script>"
+	3. out.println ("<meta http-equiv='refreash' contetn=`sec` url=`adress`)>"
+
+Q8. request.sendRedirect

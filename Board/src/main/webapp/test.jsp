@@ -1,5 +1,5 @@
 <%@page import="domain.BoardVO"%>
-<%@page import="DAO.BoardDAO"%>
+<%@page import="com.company.dao.BoardDAO"%>
 <%@page import="java.sql.Connection"%>
 <%@page import="javax.sql.*"%>
 <%@page import="javax.naming.*"%>

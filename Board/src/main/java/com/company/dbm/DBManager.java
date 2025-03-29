@@ -1,4 +1,4 @@
-package DBManager;
+package com.company.dbm;
 
 import java.sql.Connection;
 import javax.naming.*;
