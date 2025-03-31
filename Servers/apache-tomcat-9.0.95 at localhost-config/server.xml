@@ -114,18 +114,16 @@
 					<Resource auth="Container" driverClassName="com.mysql.cj.jdbc.Driver" maxIdle="30" maxTotal="100" maxWaitMillis="10000" name="jdbc/mbasic" password="1234" type="javax.sql.DataSource" url="jdbc:mysql://localhost:3306/mbasic" username="root"/>
 
 				</Context>
-				<Context docBase="JOAbook" path="/JOAbook" reloadable="true" source="org.eclipse.jst.jee.server:JOAbook">
-					<Resource auth="Container" driverClassName="com.mysql.cj.jdbc.Driver" maxIdle="30" maxTotal="100" maxWaitMillis="10000" name="jdbc/mbasic" password="1234" type="javax.sql.DataSource" url="jdbc:mysql://localhost:3306/mbasic" username="root"/>
-					</Context>
+				
 			<Context docBase="Board" path="/Board" reloadable="true" source="org.eclipse.jst.jee.server:Board">
 				<Resource auth="Container" driverClassName="com.mysql.cj.jdbc.Driver" maxIdle="30" maxTotal="100" maxWaitMillis="10000" name="jdbc/mbasic" password="1234" type="javax.sql.DataSource" url="jdbc:mysql://localhost:3306/mbasic" username="root"/>
 					</Context>
 									
-			<Context docBase="Bank_mini" path="/Bank_mini" reloadable="true" source="org.eclipse.jst.jee.server:Bank_mini">
-				<Resource auth="Container" driverClassName="com.mysql.cj.jdbc.Driver" maxIdle="30" maxTotal="100" maxWaitMillis="10000" name="jdbc/mbasic" password="1234" type="javax.sql.DataSource" url="jdbc:mysql://localhost:3306/mbasic" username="root"/>
-					</Context>
 			
-			</Host>
+			<Context docBase="bank_jsp" path="/bank_jsp" reloadable="true" source="org.eclipse.jst.jee.server:bank_jsp">
+			<Resource auth="Container" driverClassName="com.mysql.cj.jdbc.Driver" maxIdle="30" maxTotal="100" maxWaitMillis="10000" name="jdbc/mbasic" password="1234" type="javax.sql.DataSource" url="jdbc:mysql://localhost:3306/mbasic" username="root"/>
+					</Context>
+					<Context docBase="zbank_fail" path="/zbank_fail" reloadable="true" source="org.eclipse.jst.jee.server:zbank_fail"/><Context docBase="zJOAbook" path="/zJOAbook" reloadable="true" source="org.eclipse.jst.jee.server:zJOAbook"/></Host>
 		</Engine>
 	</Service>
 </Server>

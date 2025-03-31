@@ -1,0 +1,107 @@
+1. SPRING?
+-----------------------------------
+#1. SPRING?
+-----------------------------------
+▶ Step0. jsp
+1. mvc1 - jsp( controller ) 역할
+2. mvc2 - servlet ( controller ) 역할
+3. frontcontroller
+
+▶ Step1. framework
+1. framework [ 디자인패턴 + 라이브러리 = 프레임워크 ]
+2. 소프트웨어 개발의 뼈대역할
+
+▶ Step2. ioc + di
+- inversion of contlrol (제어의 역흐름)
+- 인스턴스의 생성~소멸까지 생명주기를 컨테이너가 처리
+- pojo (plain old java object)
+
+
+Class A{ }
+A a1 - new A()
+
+생성 → 초기화 → 서비스 → 소멸 (반복)
+
+
+ioc가 아닌 경우 - [ 개발자 → (Class A)
+  					→ (Class B)
+					  → (Class C) ] 컨테이너
+
+ioc가 아닌 경우 - [ 개발자 ←  (Class A)
+  					←  (Class B)
+					  ←  (Class C) ] 컨테이너
+
+
+
+2. di (dependency injection : 의존성 주입)
+- 각 클래스 간의 의존관계를 [설정파일]을 통해 컨테이너가 자동으로 연결
+장점 : 코드 단순화 / 결합도 제거
+
+
+
+
+▶ Step3. 실습
+=====================
+실습(1) 설치
+=====================
+*버젼다운그레이드
+ 0. java.sun.com - java11 - Windows - x64 Installer
+ 1. 스프링 3버젼 다운로드
+ 2. 다운로드 경로
+     https://github.com/spring-attic/toolsuite-distribution/wiki/Spring-Tool-Suite-3
+3. 압축 풀 때 - 경로 짧게 / 공백,한글,특수기호(특히 하이픈) 경로에 있으면 빼기
+
+
+실습(2) 
+
+    1. dynamic web project - spring000
+    2. configure  - [Convert to Maven Project]
+    3. spring      - add Spring project Nature
+    4. java se-11 / project facts, build path
+    5. build path - add Libraries - JUnit 4
+
+
+구조 확인 
+
+1. pom.xml			  자동 설치 다운로드
+2. src/main/java 		  실제 자바파일들 위치
+3. src/test/java  		  실제 테스트 파일의 위치
+4. src/main/webapp	  jsp 파일 위치
+
+
+연습문제) spring 001_di
+
+
+
+실습(3) spring mvc
+
+1. new - spring - legacy project - mvc project
+
+
+% 플러그인
+\.metadata\.plugins\org.springsource.ide.eclipse.commons.content.core
+
+%import 해서 완성된 파일
+
+
+1. 자동화
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
