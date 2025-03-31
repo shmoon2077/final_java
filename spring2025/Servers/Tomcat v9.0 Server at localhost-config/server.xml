@@ -165,7 +165,7 @@
       
 	
 		
-		<Context docBase="projectName" path="/myapp" reloadable="true" source="org.eclipse.jst.jee.server:projectName"/></Host>
+		</Host>
     </Engine>
   </Service>
 </Server>
