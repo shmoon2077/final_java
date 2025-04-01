@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beansProjectDescription>
+	<version>1</version>
+	<pluginVersion><![CDATA[3.9.18.202109140629-RELEASE]]></pluginVersion>
+	<configSuffixes>
+		<configSuffix><![CDATA[xml]]></configSuffix>
+	</configSuffixes>
+	<enableImports><![CDATA[false]]></enableImports>
+	<configs>
+<<<<<<< HEAD:spring2025/spring001_di/.springBeans
+		<config>src/main/java/config/beans001.xml</config>
+		<config>src/main/java/config/beans002.xml</config>
+=======
+		<config>src/main/java/config/root.xml</config>
+>>>>>>> origin/main:spring2025/spring005_ex_board/.springBeans
+	</configs>
+	<autoconfigs>
+	</autoconfigs>
+	<configSets>
+	</configSets>
+</beansProjectDescription>

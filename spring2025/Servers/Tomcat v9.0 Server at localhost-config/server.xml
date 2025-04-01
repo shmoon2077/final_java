@@ -165,7 +165,7 @@
       
 	
 		
-		<Context docBase="projectName" path="/myapp" reloadable="true" source="org.eclipse.jst.jee.server:projectName"/></Host>
+		<Context docBase="spring004_jdbc" path="/spring004_jdbc" reloadable="true" source="org.eclipse.jst.jee.server:spring004_jdbc"/></Host>
     </Engine>
   </Service>
 </Server>
