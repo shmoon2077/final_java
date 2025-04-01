@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- ClacRectangle rect = new ClacRectangle() -->
+	<bean id="rect" class="com.company.ioctest.ClacRectangle"/>
+
+	<!-- CalcTriangle tri = new CalcTriangle() -->
+	<bean id="tri" class="com.company.ioctest.CalcTriangle"/>
+
+	<!-- MyArea myArea = new MyArea() -->
+	<bean id="myArea" class="com.company.ioctest.MyArea">
+		<constructor-arg index="0" value="alpha"/>
+		<constructor-arg index="1" ref="rect"/>
+	
+	</bean>
+
+</beans>
